@@ -6,9 +6,13 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
-      <nav className=" flex justify-between items-center h-20 px-4 bg-gradient-to-r from-gray-700 to-gray-950 text-white">
-        <div className="text-2xl font-bold justify-self-start">Logo</div>
-        <div className="sm:hidden flex space-x-6 hover:bg-blue-800 rounded-lg p-2 transition duration-300 ease-in-out">
+      <nav className="min-sm:fixed top-0 left-0 w-full flex justify-between items-center h-20 px-4 bg-gradient-to-r from-gray-700 to-gray-950 text-white font-serif z-50 shadow-md">
+        <div className="p-2 text-xl font-bold justify-self-start bg-gradient-to-b  from-gray-700 to-gray-950 rounded-3xl">
+          <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+            Portfolio
+          </span>
+        </div>
+        <div className="sm:hidden flex space-x-6 hover:bg-blue-600 rounded-lg p-2 transition duration-300 ease-in-out">
           <button
             className="cursor-pointer"
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -29,11 +33,10 @@ export default function Nav() {
             </svg>
           </button>
           {menuOpen && (
-            <div className=" fixed top-0 right-0 h-full w-1/2 bg-gradient-to-b from-gray-800 to-gray-950 text-white  shadow-md p-4 space-y-2 z-50 text-lg ">
-              <div className="flex justify-end items-center mb-10 ">
-                {" "}
+            <div className="fixed top-0 right-0 h-full w-1/2 bg-gradient-to-b from-gray-800 to-gray-950 text-white shadow-md p-4 space-y-2 z-50 text-lg">
+              <div className="flex justify-end items-center mb-10">
                 <button
-                  className="cursor-pointer mt-3 hover:bg-blue-800 rounded-lg p-2 transition duration-300 ease-in-out"
+                  className="cursor-pointer mt-2 hover:bg-blue-600 rounded-lg p-2 transition duration-300 ease-in-out"
                   onClick={() => setMenuOpen((prev) => !prev)}
                 >
                   <svg
@@ -52,7 +55,7 @@ export default function Nav() {
                   </svg>
                 </button>
               </div>
-              <div className=" space-y-4 ">
+              <div className="space-y-4">
                 <Link
                   to="hero"
                   smooth={true}
@@ -150,7 +153,7 @@ export default function Nav() {
             to="contact"
             smooth={true}
             duration={500}
-            className="block cursor-pointer hover:bg-blue-900 rounded-lg p-2 transition duration-300 ease-in-out"
+            className="hover:text-blue-500 font-bold block cursor-pointer hover:bg-blue-900 rounded-lg p-2 transition duration-300 ease-in-out"
           >
             Contact
           </Link>
