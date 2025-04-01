@@ -72,14 +72,7 @@ export default function Nav() {
                 >
                   About
                 </Link>
-                <Link
-                  to="skills"
-                  smooth={true}
-                  duration={500}
-                  className="block cursor-pointer hover:bg-blue-900 rounded-lg p-2 transition duration-300 ease-in-out"
-                >
-                  Skills
-                </Link>
+
                 <Link
                   to="projects"
                   smooth={true}
@@ -125,14 +118,7 @@ export default function Nav() {
           >
             About
           </Link>
-          <Link
-            to="skills"
-            smooth={true}
-            duration={500}
-            className="block cursor-pointer hover:bg-blue-900 rounded-lg p-2 transition duration-300 ease-in-out"
-          >
-            Skills
-          </Link>
+
           <Link
             to="projects"
             smooth={true}

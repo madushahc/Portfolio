@@ -5,7 +5,6 @@ import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
 import Projects from "./Components/Projects";
-import Skills from "./Components/Skills";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <Nav />
       <Hero />
       <About />
-      <Skills />
       <Projects />
       <Certification />
       <Contact />
